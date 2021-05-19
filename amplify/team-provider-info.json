@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-theticket2invoice-dev-135843-authRole",
+      "UnauthRoleArn": "arn:aws:iam::115238827609:role/amplify-theticket2invoice-dev-135843-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::115238827609:role/amplify-theticket2invoice-dev-135843-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-theticket2invoice-dev-135843-deployment",
+      "UnauthRoleName": "amplify-theticket2invoice-dev-135843-unauthRole",
+      "StackName": "amplify-theticket2invoice-dev-135843",
+      "StackId": "arn:aws:cloudformation:eu-west-1:115238827609:stack/amplify-theticket2invoice-dev-135843/9117df60-b899-11eb-a310-066ade55e1ad",
+      "AmplifyAppId": "d2k559yx73by76"
+    },
+    "categories": {
+      "auth": {
+        "theticket2invoice4c18b3b3": {}
+      },
+      "function": {
+        "theticket2invoice924c7c92": {
+          "deploymentBucketName": "amplify-theticket2invoice-dev-135843-deployment",
+          "s3Key": "amplify-builds/theticket2invoice924c7c92-6f537243484e66394f6f-build.zip"
+        }
+      }
+    }
+  }
+}

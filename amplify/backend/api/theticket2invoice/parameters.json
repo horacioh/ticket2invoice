@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "theticket2invoice",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "auththeticket2invoice4c18b3b3",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

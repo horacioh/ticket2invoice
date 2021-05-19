@@ -1,0 +1,29 @@
+type Ticket
+  @model
+  @auth(
+    rules: [
+      { allow: owner }
+      { allow: private, operations: [read] }
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  sent: Boolean!
+  companyName: String
+  companyEmail: AWSEmail!
+  image: String!
+}
+
+type Company
+  @model
+  @auth(
+    rules: [
+      { allow: owner }
+      { allow: private, operations: [read] }
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  name: String!
+  email: AWSEmail!
+}
