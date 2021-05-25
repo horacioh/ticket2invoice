@@ -62,7 +62,7 @@ Edit your schema at /Users/horacio/workspace/ticket2invoice/amplify/backend/api/
 
 ## add lambda trigger (function)
 
-### ⚠️ THIS DOES NOT WORK WITH THIS FUNCTION CONFIG. YOU NEED TO CREATE A DEFAULT LAMBDA TRIGGER AND ADD ALL THE PERMISSIONS IN THE AWS CONSOLE
+### ⚠️ THIS DOES NOT WORK WITH THIS FUNCTION CONFIG. YOU NEED TO CREATE A DEFAULT LAMBDA TRIGGER AND ADD ALL THE PERMISSIONS IN THE AWS CONSOLE. This is due to a cyclical dependency with Cognito and S3. soon to be fixed!
 
 ```bash
 → amplify add function
