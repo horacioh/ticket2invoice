@@ -3,8 +3,8 @@ type Ticket
   @auth(
     rules: [
       { allow: owner }
-      { allow: private, operations: [read] }
-      { allow: public, operations: [read] }
+      # { allow: private, operations: [read] }
+      # { allow: public, operations: [read] }
     ]
   ) {
   id: ID!
@@ -19,8 +19,8 @@ type Company
   @auth(
     rules: [
       { allow: owner }
-      { allow: private, operations: [read] }
-      { allow: public, operations: [read] }
+      # { allow: private, operations: [read] }
+      # { allow: public, operations: [read] }
     ]
   ) {
   id: ID!
