@@ -1,8 +1,10 @@
 type Ticket
   @model
+  @key(name: "byCompany", fields: ["companyName", "companyEmail"])
   @auth(
     rules: [
       { allow: owner }
+      { allow: groups, groups: ["Admin"] }
       # { allow: private, operations: [read] }
       # { allow: public, operations: [read] }
     ]
@@ -19,6 +21,7 @@ type Company
   @auth(
     rules: [
       { allow: owner }
+      { allow: groups, groups: ["Admin"] }
       # { allow: private, operations: [read] }
       # { allow: public, operations: [read] }
     ]
@@ -26,4 +29,5 @@ type Company
   id: ID!
   name: String!
   email: AWSEmail!
+  tickets: [Ticket] @connection(keyName: "byCompany", fields: ["id"])
 }
