@@ -8,11 +8,16 @@ const emailText = `Buenas,
 me podrían pasar una factura del ticket adjunto?
 
 mis datos fiscales:
-XXX
-XXX
-XXX
+Horacio Herrera
+46440742Q
+carrer Gran de Gracia 78, 1
+08012, Barcelona, España
 
 gracias
+
+_
+Horacio Herrera
+hi@horacioh.com
 `
 
 function getBase64(key) {
@@ -54,7 +59,6 @@ exports.handler = (event) => {
 }
 
 function sendEmail({ to, image, imageName }) {
-  console.log("SEND MAIL!!!!")
   return new Promise((resolve, reject) => {
     let sendRawEmailPromise
 
@@ -62,7 +66,7 @@ function sendEmail({ to, image, imageName }) {
       from: "hi@horacioh.com",
       replyTo: "hi@horacioh.com",
       to,
-      subject: "My name | Solicitud de Factura",
+      subject: "Horacio Herrera | Solicitud de Factura",
       text: emailText,
       attachments: [
         {
